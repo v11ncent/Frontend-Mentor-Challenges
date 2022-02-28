@@ -4,5 +4,5 @@ Over the past year, I've been making a variety of websites and even some freelan
 ## Challenges Completed
 None :(
 
-### Challenges In Progress
+## Challenges In Progress
 QR Code Component -- https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub/qr-code-component-ETqaBcXIL
