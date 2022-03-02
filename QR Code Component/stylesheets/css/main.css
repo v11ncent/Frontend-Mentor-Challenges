@@ -1,0 +1,118 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container--card {
+  display: inline-block;
+  max-width: fit-content;
+  border-radius: 0.6em;
+  padding: 0.8em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 15em;
+  border-radius: inherit;
+}
+
+.container--content {
+  padding: 1.5em 0.5em;
+  max-width: 30ch;
+}
+
+h3 {
+  padding-bottom: 0.75em;
+  color: #1f3251;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  color: #8c8c8c;
+  font-size: 0.9375em;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3::selection, p::selection {
+  background-color: none;
+  color: #F8C9DB;
+}
+
+.attribution {
+  padding: 1em;
+}
+
+.container--cards {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  padding: 2em;
+  overflow-x: auto;
+  width: 100%;
+}
+
+body {
+  background-color: #a7afbe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -10,8 +10,12 @@
 
 // Components
 @import
-  'components/card';
+  'components/card',
+  'components/attribution';
 
+// Layout
+@import
+  'layout/cards.scss';
 // Page-specific styles
 @import
   'pages/home';

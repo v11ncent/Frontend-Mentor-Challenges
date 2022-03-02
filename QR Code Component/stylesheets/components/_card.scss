@@ -1,0 +1,54 @@
+.container--card
+{
+    display: inline-block;
+    max-width: fit-content;
+    border-radius: 0.6em;
+    padding: 0.8em;
+    background-color: $card--background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+
+img
+{
+    height: auto;
+    max-width: 100%;
+    width: 15em;
+    border-radius: inherit;
+}
+
+.container--content
+{
+    padding: 1.5em 0.5em;
+    max-width: 30ch;
+}
+
+h3
+{
+    padding-bottom: 0.75em;
+    color: $text--header-color;
+    font-family: $text--ff-main;
+    font-size: $text--size-header;
+    font-weight: 700;
+    text-align: center;
+}
+
+p
+{
+    color: $text--content-color;
+    font-size: $text--size-body;
+    font-family: $text--ff-main;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3::selection, p::selection
+{
+    background-color: none;
+    color: #F8C9DB;
+}
