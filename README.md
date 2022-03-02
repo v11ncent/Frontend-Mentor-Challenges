@@ -1,5 +1,5 @@
 # Hey :smile:
-Over the past year, I've designed & developed websites for both myself and various clients. With this repository, I want to focus on improving my fundamentals with Frontend Mentor. I'm currently using Frontend Mentor to hone my experiences & improve on my readability, maintainability, responsive design, accessibility, and SEO skills. Likewise, I'm taking this chance to learn scss/sass to improve in these areas and subsequently improve my workflow.
+Over the past year, I've designed & developed websites for both myself and various clients. With this repository, I'll focus on improving my fundamentals with Frontend Mentor. I'm currently using Frontend Mentor to hone my experiences & improve on my readability, maintainability, responsive design, accessibility, and SEO skills. Likewise, I'm taking this chance to learn scss/sass to improve in these areas and subsequently improve my workflow (workflow is a big thing to me).
 
 ## Challenges Completed :partying_face:
 1. QR Code Component ⇥ 
