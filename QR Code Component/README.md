@@ -1,3 +1,10 @@
+# My Version - QR code component (Frontend Mentor's version directly below as well as overview of challenge)
+
+![Screenshot of Vince's version of the QR code component(https://i.imgur.com/FQ0JoCh.png)
+
+I took some liberties with this challenge (it's for fun, ya know) so in addition to making a card component, I also made a component for a horizontally-scrolling container of cards. I've always thought that horizontally-scrollable containers were a nice design element for pages that contain a lot of content (and it's also super nice for mobile pages as well!)
+
+
 # Frontend Mentor - QR code component
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
