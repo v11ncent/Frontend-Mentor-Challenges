@@ -6,4 +6,7 @@ Over the past year, I've designed & developed websites for both myself and vario
    <br /> https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub/qr-code-component-ETqaBcXIL
 
 ## Challenges In Progress :face_with_spiral_eyes:
-None--
+Sunnyside Up Agency
+
+## Future Ideas
+Add all of my completed challenges to my portfolio website (which I still need to make!)
