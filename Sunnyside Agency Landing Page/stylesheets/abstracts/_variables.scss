@@ -1,0 +1,43 @@
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+/*=============================*/
+/*           COLOURS           */
+/*=============================*/
+
+// Primary
+$color__primary-soft-red: hsl(7, 99%, 70%);
+$color__primary-yellow: hsl(51, 100%, 70%);
+$color__primary-dark-blue: hsl(198, 62%, 26%);
+$color__primary-dark-cyan: hsl(167, 40%, 24%);
+$color__primary-moderate-cyan: hsl(168, 34%, 41%);
+
+// Neutral
+$color__neutral-very-dark-blue: hsl(212, 27%, 19%);
+$color__neutral-very-dark-gray-blue: hsl(213, 27%, 19%);
+$color__neutral-dark-gray-blue: hsl(232, 10%, 55%);
+$color__neutral-gray-blue: hsl(210, 4%, 67%);
+$color__neutral-white: hsl(0, 0%, 100%);
+
+
+/*=============================*/
+/*            FONTS            */
+/*=============================*/
+
+// Family
+$font__family-barlow: '';
+$font__family-fraunces: '';
+
+// Weight
+$font__weight--900: 900;
+$font__weight--700: 700;
+$font__weight-600: 600;
+
+// Size
+$font__size: 18px;
