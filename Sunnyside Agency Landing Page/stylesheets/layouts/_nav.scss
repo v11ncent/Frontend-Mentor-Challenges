@@ -1,0 +1,34 @@
+header > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    &.nav__site-logo {
+        font-family: $font__family-barlow;
+        font-size: 2em;
+    }
+}
+
+
+// <header>
+// <nav>
+//   <ul>
+//     <li>sunnyside</li>
+//     <span>
+//       <li>
+//         <a href="">About</a>
+//       </li>
+//       <li>
+//         <a href="">Services</a>
+//       </li>
+//       <li>
+//         <a href="">Projects</a>
+//       </li>
+//       <li>
+//         <a href="">Contact</a>
+//       </li>
+//     </span>
+//   </ul>
+// </nav>
+// </header>

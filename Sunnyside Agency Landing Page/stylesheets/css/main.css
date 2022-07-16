@@ -1,3 +1,9 @@
+/*=============================*/
+/*           COLOURS           */
+/*=============================*/
+/*=============================*/
+/*            FONTS            */
+/*=============================*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -43,6 +49,17 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+header > nav > ul.nav__site-logo {
+  font-family: "Barlow", sans-serif;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=main.css.map */
