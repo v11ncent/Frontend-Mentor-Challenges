@@ -4,13 +4,13 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-
-    border: 2px solid white;
+    height: 90vh;
 
     h1 {
         font-family: $font__family-fraunces;
         font-weight: 800;
         text-transform: uppercase;
+        text-align: center;
         letter-spacing: 0.15em;
         color: white;
         position: absolute;
@@ -21,5 +21,9 @@ main {
 
     img {
         z-index: -1;
+    }
+
+    @media (max-width: $breakpoint__desktop) {
+        justify-content: flex-end;
     }
 }

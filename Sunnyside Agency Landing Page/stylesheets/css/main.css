@@ -58,7 +58,6 @@ header > nav {
   position: fixed;
   min-width: 100%;
   z-index: 10;
-  background-color: #3EC0FF;
 }
 
 header > nav ul {
@@ -109,12 +108,13 @@ main {
   align-items: center;
   justify-content: center;
   position: relative;
-  border: 2px solid white;
+  height: 90vh;
 }
 main h1 {
   font-family: "Fraunces", serif;
   font-weight: 800;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.15em;
   color: white;
   position: absolute;
@@ -125,13 +125,17 @@ main h1 {
 main img {
   z-index: -1;
 }
+@media (max-width: 1440px) {
+  main {
+    justify-content: flex-end;
+  }
+}
 
 section#about > ul {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 0;
   grid-template-areas: "text-1 img-1" "img-2  text-2";
 }
 section#about > ul .grid__text {
@@ -140,7 +144,7 @@ section#about > ul .grid__text {
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  padding: 0em 9em;
+  padding: 0 20%;
 }
 section#about > ul .grid__text h2 {
   font-family: "Fraunces", serif;
@@ -148,17 +152,18 @@ section#about > ul .grid__text h2 {
 }
 section#about > ul .grid__text p {
   font-family: "Barlow", sans-serif;
-  opacity: 0.5;
+  font-size: clamp(1.1em, 1.15vw, 1.5em);
+  opacity: 0.45;
   margin: 2em 0;
 }
 section#about > ul .grid__text a {
   text-decoration: none;
-  color: black;
   font-family: "Fraunces", serif;
   text-transform: uppercase;
   font-weight: 800;
   position: relative;
   z-index: 1;
+  color: black;
 }
 section#about > ul .grid__text a::before {
   position: absolute;
@@ -166,25 +171,23 @@ section#about > ul .grid__text a::before {
   width: 110%;
   height: 0.5em;
   border-radius: 2em;
-  opacity: 0.6;
+  opacity: 0.3;
   margin-top: 1em;
   z-index: -1;
   left: -5%;
 }
-section#about > ul .grid__text:nth-of-type(1) {
-  border: 3px solid yellow;
+section#about > ul .grid__text a:hover::before {
+  opacity: 1;
 }
 section#about > ul .grid__text:nth-of-type(1) a::before {
   background-color: yellow;
-}
-section#about > ul .grid__text:nth-of-type(2) {
-  border: 3px solid pink;
 }
 section#about > ul .grid__text:nth-of-type(2) a::before {
   background-color: pink;
 }
 section#about > ul .grid__img img {
   height: 100%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -203,6 +206,18 @@ section#about > ul .section__about-4 {
 section#about > ul section {
   min-height: 100%;
   min-width: 100%;
+}
+@media (max-width: 1440px) {
+  section#about > ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img-1" "text-1" "img-2" "text-2";
+  }
+  section#about > ul .grid__text {
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+  }
 }
 
 html * {
@@ -223,7 +238,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: clamp(2.5em, 3vw, 3.5em);
   line-height: 1.15;
 }
 
