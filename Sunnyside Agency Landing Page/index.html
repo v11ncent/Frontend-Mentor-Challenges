@@ -42,13 +42,13 @@
   
   <main>
     <h1>We are creatives</h1>
-    <img src="./images/desktop/image-header.jpg" alt="">
+    <img src="./images/desktop/image-header.jpg" alt="Image of half an orange.">
   </main>
 
   <section id="about">
     <ul>
       <li>
-        <section class="section__about-1">
+        <section class="grid__text section__about-1">
           <h2>Transform your brand</h2>
           <p>
             We are a full-service creative agency specializing in helping brands grow fast. 
@@ -58,12 +58,24 @@
         </section>
       </li>
       <li>
-        <section class="section__about-2">
-          <img src="" alt="">
+        <section class="grid__img section__about-2">
+          <img 
+               srcset="./images/desktop/image-transform.jpg 720w,
+                       ./images/mobile/image-transform.jpg 750w" 
+               sizes="(max-width: 375px) 750px,
+                      720px"
+               src="./images/desktop/image-transform.jpg"
+               alt="Image of an egg."
+          >
         </section>
       </li>
       <li>
-        <section class="section__about-3">
+        <section class="grid__img section__about-3">
+          <img src="./images/desktop/image-stand-out.jpg" alt="Image of a pink glass.">
+        </section>
+      </li>
+      <li>
+        <section class="grid__text section__about-4">
           <h2>Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
@@ -72,7 +84,7 @@
         </section>
       </li>
       <li>
-        <section class="section__about-4">
+        <section class="section__about-5">
           <h2>Graphic design</h2>
           <p>
             Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
@@ -80,7 +92,7 @@
         </section>
       </li>
       <li>
-        <section class="section__about-5">
+        <section class="section__about-6">
           <h2>Photography</h2>
           <p>
             Increase your credibility by getting the most stunning, high-quality photos that improve your business image.

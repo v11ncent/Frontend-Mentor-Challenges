@@ -1,7 +1,8 @@
 header > nav {
     position: fixed;
     min-width: 100%;
-    z-index: 20;
+    z-index: 10;
+    background-color: $color__primary-cyan;
 }
 
 header > nav ul {
@@ -9,7 +10,7 @@ header > nav ul {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    padding: 1.25em 2em;
+    padding: 0.5em 2em;
 
     & > li.nav__site-logo {
         color: white;
@@ -41,6 +42,15 @@ header > nav ul {
         text-transform: uppercase;
         font-family: $font__family-fraunces;
         font-size: 1em;
+    }
+
+    a:not(.anchor__cta):hover {
+        padding-bottom: 0.1em;
+        border-bottom: 2px solid white;
+    }
+
+    a.anchor__cta:hover {
+        filter: brightness(98%);
     }
 }
 

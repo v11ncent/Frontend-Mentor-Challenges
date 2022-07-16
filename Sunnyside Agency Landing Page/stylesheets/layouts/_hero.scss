@@ -5,9 +5,10 @@ main {
     justify-content: center;
     position: relative;
 
+    border: 2px solid white;
+
     h1 {
         font-family: $font__family-fraunces;
-        font-size: 3.35em;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 0.15em;

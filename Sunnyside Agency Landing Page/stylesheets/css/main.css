@@ -4,6 +4,9 @@
 /*=============================*/
 /*            FONTS            */
 /*=============================*/
+/*=============================*/
+/*         BREAKPOINTS         */
+/*=============================*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -54,7 +57,8 @@ input {
 header > nav {
   position: fixed;
   min-width: 100%;
-  z-index: 20;
+  z-index: 10;
+  background-color: #3EC0FF;
 }
 
 header > nav ul {
@@ -62,7 +66,7 @@ header > nav ul {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 1.25em 2em;
+  padding: 0.5em 2em;
 }
 header > nav ul > li.nav__site-logo {
   color: white;
@@ -91,6 +95,13 @@ header > nav ul a.anchor__cta {
   font-family: "Fraunces", serif;
   font-size: 1em;
 }
+header > nav ul a:not(.anchor__cta):hover {
+  padding-bottom: 0.1em;
+  border-bottom: 2px solid white;
+}
+header > nav ul a.anchor__cta:hover {
+  filter: brightness(98%);
+}
 
 main {
   display: flex;
@@ -98,10 +109,10 @@ main {
   align-items: center;
   justify-content: center;
   position: relative;
+  border: 2px solid white;
 }
 main h1 {
   font-family: "Fraunces", serif;
-  font-size: 3.35em;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -115,6 +126,89 @@ main img {
   z-index: -1;
 }
 
+section#about > ul {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  grid-template-areas: "text-1 img-1" "img-2  text-2";
+}
+section#about > ul .grid__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 0em 9em;
+}
+section#about > ul .grid__text h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+}
+section#about > ul .grid__text p {
+  font-family: "Barlow", sans-serif;
+  opacity: 0.5;
+  margin: 2em 0;
+}
+section#about > ul .grid__text a {
+  text-decoration: none;
+  color: black;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+section#about > ul .grid__text a::before {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 0.5em;
+  border-radius: 2em;
+  opacity: 0.6;
+  margin-top: 1em;
+  z-index: -1;
+  left: -5%;
+}
+section#about > ul .grid__text:nth-of-type(1) {
+  border: 3px solid yellow;
+}
+section#about > ul .grid__text:nth-of-type(1) a::before {
+  background-color: yellow;
+}
+section#about > ul .grid__text:nth-of-type(2) {
+  border: 3px solid pink;
+}
+section#about > ul .grid__text:nth-of-type(2) a::before {
+  background-color: pink;
+}
+section#about > ul .grid__img img {
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+section#about > ul .section__about-1 {
+  grid-area: text-1;
+}
+section#about > ul .section__about-2 {
+  grid-area: img-1;
+}
+section#about > ul .section__about-3 {
+  grid-area: img-2;
+}
+section#about > ul .section__about-4 {
+  grid-area: text-2;
+}
+section#about > ul section {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+html * {
+  line-height: 1.5;
+}
+
 body {
   background-color: #3EC0FF;
 }
@@ -122,6 +216,15 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  font-size: 3.35em;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.15;
 }
 
 /*# sourceMappingURL=main.css.map */
