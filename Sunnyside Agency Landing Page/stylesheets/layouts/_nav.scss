@@ -1,12 +1,46 @@
-header > nav > ul {
+header > nav {
+    position: fixed;
+    min-width: 100%;
+    z-index: 20;
+}
+
+header > nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    padding: 1.25em 2em;
 
-    &.nav__site-logo {
+    & > li.nav__site-logo {
+        color: white;
         font-family: $font__family-barlow;
-        font-size: 2em;
+        font-size: 1.75em;
+        font-weight: 800;
+    }
+
+    & > span {
+        display: flex;
+        li {
+            margin: 1em 1.5em;
+        }
+    }
+
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: $font__family-barlow;
+        font-size: 1.1em;
+    }
+
+    a.anchor__cta {
+        color: black;
+        background-color: white;
+        border-radius: 2em;
+        padding: 0.75em 1.5em;
+        text-transform: uppercase;
+        font-family: $font__family-fraunces;
+        font-size: 1em;
     }
 }
 
