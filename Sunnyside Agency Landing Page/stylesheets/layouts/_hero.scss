@@ -4,8 +4,8 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 90vh;
-
+    max-height: 90vh;
+    
     h1 {
         font-family: $font__family-fraunces;
         font-weight: 800;
@@ -17,6 +17,7 @@ main {
         top: 27%;
         left: 50%;
         transform: translate(-50%, -50%);
+        min-width: 100%;
     }
 
     img {

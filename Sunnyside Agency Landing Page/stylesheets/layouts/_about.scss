@@ -2,10 +2,10 @@ section#about > ul {
     background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 'text-1 img-1'
-                         'img-2  text-2';
-
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 'grid__cell-1 grid__cell-2'
+                         'grid__cell-3 grid__cell-4'
+                         'grid__cell-5 grid__cell-6';
 
     .grid__text {
         display: flex;
@@ -13,17 +13,20 @@ section#about > ul {
         align-items: flex-start;
         justify-content: center;
         text-align: left;
-        padding: 0 20%;
+        padding: 0 22.5%;
                 
         h2 {
             font-family: $font__family-fraunces;
             font-weight: 800;
+            color: $color__neutral-very-dark-gray-blue;
         }
 
         p {
             font-family: $font__family-barlow;
-            font-size: clamp(1.1em, 1.15vw, 1.5em);
-            opacity: 0.45;
+            font-size: clamp(1em, 1.175vw, 1.55em);
+            color: $color__neutral-very-dark-gray-blue;
+            opacity: 0.6;
+            font-weight: 400;
             margin: 2em 0;
         }
 
@@ -54,18 +57,6 @@ section#about > ul {
         }
     }
 
-    .grid__text:nth-of-type(1) {
-        a::before {
-            background-color: yellow;
-        }
-    }
-
-    .grid__text:nth-of-type(2) {
-        a::before {
-            background-color: pink;
-        }
-    }
-
     .grid__img {
         img {
             height: 100%;
@@ -75,20 +66,95 @@ section#about > ul {
         }
     }
 
-    .section__about-1 {
-        grid-area: text-1;
+    li:nth-of-type(1) {
+        grid-area: grid__cell-1;
+
+        & .grid__text {
+            h2::selection,
+            p::selection,
+            a::selection {
+                background-color: $color__primary-yellow;
+            }
+
+            a::before {
+                background-color: $color__primary-yellow;
+            }
+        }
+    }
+    
+    li:nth-of-type(2) {
+        grid-area: grid__cell-2;
     }
 
-    .section__about-2 {
-        grid-area: img-1;
+    li:nth-of-type(3) {
+        grid-area: grid__cell-3;
     }
 
-    .section__about-3 {
-        grid-area: img-2;
+    li:nth-of-type(4) {
+        grid-area: grid__cell-4;
+
+        & .grid__text {
+            h2::selection,
+            p::selection,
+            a::selection {
+                background-color: $color__primary-soft-red;
+            }
+
+            a::before {
+                background-color: $color__primary-soft-red;
+            }
+        }
     }
 
-    .section__about-4 {
-        grid-area: text-2;
+    li:nth-of-type(5) {
+        grid-area: grid__cell-5;
+
+        .grid__text {
+            align-items: center;
+            justify-content: flex-end;
+            text-align: center;
+            padding-bottom: 6%;
+            
+            h2 {
+                color: $color__primary-dark-cyan;
+                text-transform: capitalize;
+            }
+
+            p {
+                color: $color__primary-moderate-cyan;
+                opacity: 1;
+            }
+        }
+    }
+
+    li:nth-of-type(6) {
+        grid-area: grid__cell-6;
+
+        .grid__text {
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 6%;
+
+            h2 {
+                color: $color__primary-dark-blue;
+            }
+
+            p {
+                color: $color__primary-dark-blue;
+                opacity: 1;
+            }
+        }
+    }
+
+    li:nth-of-type(5),
+    li:nth-of-type(6) {
+        position: relative;
+
+        & .grid__text {
+            position: absolute;
+            top: 0;
+        }
     }
 
     section {
@@ -98,16 +164,18 @@ section#about > ul {
 
     @media (max-width: $breakpoint__desktop) {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 'img-1'
-                             'text-1'
-                             'img-2'
-                             'text-2';
+        grid-template-rows: repeat(6, 100%);
+        grid-template-areas: 'grid__cell-2'
+                             'grid__cell-1'
+                             'grid__cell-3'
+                             'grid__cell-4'
+                             'grid__cell-5'
+                             'grid__cell-6';
 
         .grid__text {
             align-items: center;
             text-align: center;
-            padding: 10%;
+            padding: 15% 5.5%;
         }
     }
 }
