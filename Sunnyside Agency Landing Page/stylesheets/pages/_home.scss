@@ -19,3 +19,7 @@ h2 {
     font-size: clamp(2.3em, 3vw, 3.5em);
     line-height: 1.15;
 }
+
+p, blockquote {
+    font-size: clamp(1.2em, 1.2vw, 1.55em);
+}

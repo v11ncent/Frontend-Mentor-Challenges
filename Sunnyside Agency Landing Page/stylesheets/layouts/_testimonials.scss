@@ -1,0 +1,88 @@
+section#testimonials {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8%;
+
+    h2 {
+        font-family: $font__family-fraunces;
+        font-size: clamp(1.2em, 1.4vw, 1.6em);
+        color: black;
+        opacity: 0.3;
+        font-weight: 800;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin-bottom: 4em;
+    }
+
+    @media (max-width: $breakpoint__desktop) {
+        padding: 20% 0;
+    }
+}
+
+section#testimonials ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        figure {
+            img {
+                border-radius: 50%;
+                width: 6em;
+            }
+    
+            blockquote {
+                font-family: $font__family-barlow;
+                color: black;
+                opacity: .6;
+                margin: 1em 0;
+                padding: 1em;
+            }
+
+            figcaption {
+                h4 {
+                    font-family: $font__family-fraunces;
+                    font-weight: 800;
+                    font-size: clamp(1.3em, 1.4vw, 1.5em);
+                    color: $color__neutral-very-dark-gray-blue;
+                    margin-bottom: 0.3em;
+                }
+        
+                h5 {
+                    font-family: $font__family-barlow;
+                    font-size: clamp(1em, 1vw, 1.4em);
+                    opacity: 0.3;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: $breakpoint__desktop) {
+        flex-direction: column;
+
+        li:nth-of-type(2) {
+            margin: 4em 0;
+        }
+    }
+}
+
+// <figure>
+//     <img src="" alt="">
+//     <blockquote>
+//         We put out trust in Sunnyside and they delivered, making sure our needs
+//         were met and deadlines were always hit.
+//     </blockquote>
+//     <figcaption>
+//         <h4>Emily R.</h4>
+//         <h5>Marketing Director</h5>
+//     </figcaption>
+// </figure>

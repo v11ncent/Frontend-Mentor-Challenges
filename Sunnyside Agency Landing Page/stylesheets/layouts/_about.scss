@@ -23,7 +23,6 @@ section#about > ul {
 
         p {
             font-family: $font__family-barlow;
-            font-size: clamp(1em, 1.175vw, 1.55em);
             color: $color__neutral-very-dark-gray-blue;
             opacity: 0.6;
             font-weight: 400;
